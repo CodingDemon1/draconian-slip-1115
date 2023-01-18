@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+body{
+    margin: 0%;
+    font-family: 'Roboto', sans-serif;
+}
+
+#top_heading{
+    padding: 10px 20px 10px 20px;
+    /* padding-right: 20px; */
+
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 5px rgb(223, 217, 217);
+    background-color: #000;
+}
+
+#top_heading>p{
+    color: white;
+}
+
+#top_heading a{
+    color: white;
+}
+#top_heading>a>img{
+    height:70px;
+}
+
+#top_heading>div>span{
+    color: white;
+    margin: 15px;
+}
+
+#top_heading>div>span:hover{
+    cursor: pointer;
+}
+
+/* NavBar Section */
+nav{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 5px grey;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+div>button{
+    background-color: #fff;
+    border: none;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+}
+div>button:hover{
+    border-bottom: 3px solid black;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 100vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    font-size: small;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content>div{
+    width: 200px;
+    padding: 29px;
+}
+
+
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropbtn {
+    border: 2px solid black;
+}
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+/* Banner */
+
+.banner{
+    width: 100%;
+    height: 80vh;
+    background-color: #000;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+}
+.banner>img{
+    width: 50%;
+}
+.banner>div{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    box-sizing: border-box;
+    padding: 30px;
+    background-image: url("https://sg-live-01.slatic.net/p/ecb4ce5b46cf95141de5df1eb3556fcc.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner>div>h1{
+    font-size: 60px;
+    color: rgb(211, 68, 104);
+}
+/* Current Offer */
+.currOffer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    padding: 0 100px 0 100px;
+    background-color: rgb(31, 31, 31);
+    color: #FFF;
+    margin-top: 10px;
+}
+.currOffer>h1>span{
+    font-size: 45px;
+}
+.currOffer a{
+    color: #FFF;
+
+}
+
+/* quickCategory */
+.quickCategory{
+    padding: 0 50px 0 50px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr );
+    gap: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    
+}
+.card{
+    text-align: center;
+    box-shadow:  0 0 5px grey;
+}
+.card:hover{
+    /* text-align: center; */
+    cursor: pointer;
+    box-shadow:  2px 2px 8px grey;
+}
+.card:hover p{
+    border-bottom: 2px solid black;
+}
+.card>img{
+    width: 100%;
+}
+.card{
+    text-decoration: none;
+    color: #000;
+}
+
+/* MID SECTION */
+.midSection{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.midSubSection{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    gap: 50px;
+}
+.categoryCard{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.categoryCard>a{
+    color: #FFF;
+}
+.categoryCard:hover{
+    box-shadow: 2px 2px 5px grey;
+}
+
+.Card1{
+    background-image: url("https://images.express.com/is/image/expressfashion/0097_09709392_2837_f001?cache=on&wid=960&fmt=jpeg&qlt=85,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon");
+    
+}
+.Card2{
+    background-image: url("https://images.express.com/is/image/expressfashion/0096_08262198_2050_f001?cache=on&wid=960&fmt=jpeg&qlt=85,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon");
+}
+.Card3{
+    background-image: url("https://images.express.com/is/image/expressfashion/0078_67406482_0058_9_fb?cache=on&wid=960&fmt=jpeg&qlt=85,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon");
+}
+.Card4{
+    background-image: url("https://images.express.com/is/image/expressfashion/0020_06036910_1737_a001?cache=on&wid=960&fmt=jpeg&qlt=85,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon");
+}
+.Card5{
+    background-image: url("https://images.express.com/is/image/expressfashion/0039_04352536_1378_f100?cache=on&wid=960&fmt=jpeg&qlt=85,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon");
+}
+.Card6{
+    background-image: url("https://images.express.com/is/image/expressfashion/0021_01770882_1546_f001?cache=on&wid=960&fmt=jpeg&qlt=85,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon");
+}
+hr{
+    border: 1px solid rgb(206, 205, 205);
+}
+
+/* EASY WAY */
+.easyWay{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.easyWaySub{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    
+}
+.easyWaySub>div>span{
+    font-size: 40px;
+}
+.easyWaySub>div>img{
+    height: 40px;
+}
+.easyCard{
+    box-sizing: border-box;
+    padding: 0 30px 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.easyWaySub>:nth-child(2){
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+}
+.easyWaySub>:nth-child(3){
+    /* border-left: 1px solid #000; */
+    border-right: 2px solid #000;
+}
+.easyCard>a{
+    color: #000;
+}
+
+
+/* Bottom Section */
+.bottom{
+    margin-top: 30px;
+    height: 400px;
+    display: flex;
+}
+.social{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+.social>img{
+    width: 100%;
+}
+.social>a{
+    color: #000;
+}
+.socialBtn{
+    display: flex;
+
+}
+.socialBtn>img{
+    width: 100px;
+}
+.socialBtn>img:hover{
+    cursor: pointer;
+}
+.bottom>div{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.bottom>div>a{
+    color: #000;
+    text-decoration: none;
+}
+.bottom>div>a:hover{
+    /* border-bottom: 1px solid black; */
+    color: rgb(77, 76, 76);
+}
+
+
+
