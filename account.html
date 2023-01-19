@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & SignUp</title>
+    <link rel="stylesheet" href="./Style/index.css">
+    <link rel="stylesheet" href="./Style/account.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <!-- Top Heading Start -->
+    <div id="top_heading">
+        <p>Free Shipping on Orders ₹500 and above. <a href="#">Details</a></p>
+        <a href="index.html"><img src="./logo.png" alt="image"></a>
+        <div class="smallIcons">
+                <!-- <input type="text" placeholder="Search Here">
+                <span class="material-symbols-outlined dropbtn">search</span>
+                 -->
+            <a href="account.html"><span class="material-symbols-outlined">person</span></a>
+            <span class="material-symbols-outlined">local_mall</span>
+        </div>
+    </div>
+    <!-- Top Heading End Here -->
+    <div class="container">
+        <img src="https://img.freepik.com/premium-vector/business-people-communicate-ask-questions-searching-solution-male-female-characters-businesspeople-mental-research-curiosity-colleagues-interesting-conversation-cartoon-vector-illustration_1016-11678.jpg?w=2000" alt="image">
+        <div class="form">
+            <form action="#" class="signIn">
+                <h2>LogIn</h2>
+                
+                <label for="username">Username : </label>
+                <input name="username" type="text" placeholder="Enter Your Username/Email">
+                
+                <label for="password">Password : </label>
+                <input type="password" placeholder="Enter Your Password">
+                <input type="submit" value="Login">
+            </form>
+            
+            <div class="signUpOn">
+                <span><p>Not Registered <button id="regBtn">Register Here</button></p></span>
+                <form action="#" class="signUp">
+                    <label for="name">Name : </label>
+                    <input name="name" type="text" placeholder="Enter Your Name">
+                    <label for="email">Email : </label>
+                    <input name="email" type="email" placeholder="Enter Your Email">
+                    <label for="username">Username : </label>
+                    <input name="username" type="text" placeholder="Enter Your username">
+                    
+                    <label for="password">Password : </label>
+                    <input type="password" placeholder="Enter Your Password">
+                    <input type="submit" value="Register">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./Script/account.js"></script>
+</html>

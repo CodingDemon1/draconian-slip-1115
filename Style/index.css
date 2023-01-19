@@ -14,7 +14,9 @@ body{
     justify-content: space-between;
     align-items: center;
     box-shadow: 2px 2px 5px rgb(223, 217, 217);
+
     background-color: #000;
+
 }
 
 #top_heading>p{
@@ -28,14 +30,29 @@ body{
     height:70px;
 }
 
-#top_heading>div>span{
+
+#top_heading>div span{
     color: white;
     margin: 15px;
 }
+#top_heading>div span:hover{
+    color: rgb(219, 219, 219);
+}
+
 
 #top_heading>div>span:hover{
     cursor: pointer;
 }
+
+.smallIcons>input{
+    box-sizing: border-box;
+    background-color: rgb(87, 87, 87);
+    border: 1px solid grey;
+    padding: 5px 10px 5px 30px;
+    font-size: large;
+    border-radius: 20px;
+}
+
 
 /* NavBar Section */
 nav{
@@ -66,7 +83,9 @@ div>button:hover{
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    width: 100vw;
+
+    /* width: 100vw; */
+
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -280,9 +299,7 @@ hr{
 .social>img{
     width: 100%;
 }
-.social>a{
-    color: #000;
-}
+
 .socialBtn{
     display: flex;
 
@@ -301,6 +318,18 @@ hr{
 .bottom>div>a{
     color: #000;
     text-decoration: none;
+
+    font-weight: lighter;
+    font-size: small;
+    line-height: 20px;
+}
+.bottom h3{
+    margin-bottom: 5px;
+    font-size: 20px;
+    /* font-weight: lighter; */
+    text-decoration: underline;
+    /* font-weight: lighter; */
+
 }
 .bottom>div>a:hover{
     /* border-bottom: 1px solid black; */
