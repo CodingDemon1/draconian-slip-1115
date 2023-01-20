@@ -16,8 +16,8 @@
         <p>Free Shipping on Orders ₹500 and above. <a href="#">Details</a></p>
         <a href="index.html"><img src="./logo.png" alt="image"></a>
         <div class="smallIcons">
-                <input type="text" placeholder="Search Here">
-                <span class="material-symbols-outlined dropbtn">search</span>
+                <input type="text" placeholder="Search Here" id="searchBar">
+                <span class="material-symbols-outlined searchBtn ">search</span>
                 
             <a href="account.html"><span class="material-symbols-outlined">person</span></a>
             <span class="material-symbols-outlined">local_mall</span>
@@ -211,7 +211,7 @@
             <h2>BROWSE BY :-</h2>
             <hr>
             <p>SORT :</p>
-            <select name="sortByPrice" id="sortByPrice">
+            <select name="sortByPrice" id="sort">
                 <option value="">Sort By Price</option>
                 <option value="asc">Ascending</option>
                 <option value="desc">Descending</option>
@@ -219,13 +219,30 @@
 
             <hr>
             <p>FILTER :</p>
-            <select name="
-            filter" id="filter">
-        <option value="">Select to Filter</option>
-        <option value="fit">FIT</option>
-        <option value="pattern">PATTERN</option>
-        <option value="size">SIZE</option>
-        <option value="color">COLOUR</option></select>
+            <select name="filter" class="filterByCategory">
+                <option value="">Filter by Category</option>
+                <option value="Shirt">Shirt</option>
+                <option value="Sweater">Sweater</option>
+                <option value="Suit">Suit</option>
+                <option value="Polo">Polo</option>
+                <option value="Jeans">Jeans</option>
+            </select>
+            <select name="filterByPrice" class="filterByPrice">
+                <option value="">Filter by Price</option>
+                <option value="49">Less Than $50</option>
+                <option value="99">Less Than $100</option>
+                <option value="149">Less Than $150</option>
+                <option value="199">Less Than $200</option>
+                <option value="200">$200 and Above</option>
+            </select>
+            <select name="filterByRating" class="filterByRating">
+                <option value="">Filter by Rating</option>
+                <option value="0">Above 0 Star</option>
+                <option value="1">Above 1 Star</option>
+                <option value="2">Above 2 Star</option>
+                <option value="3">above 3 Star</option>
+                <option value="4">Above 4 Star</option>
+            </select>
         </div>
         <div class="displaySection">
 

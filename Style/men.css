@@ -20,6 +20,7 @@
     border: 1px solid black;
     font-size: 16px;
     color: grey;
+    margin-bottom: 20px;
 }
 
 .displaySection{
@@ -45,5 +46,5 @@
     box-shadow: 2px 2px 8px grey;
 }
 .productCard>img{
-    width: 80%;
+    width: 100%;
 }
