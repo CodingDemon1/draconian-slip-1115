@@ -117,7 +117,7 @@ filterByPrice.addEventListener("change",()=>{
     // console.log(filterValue);
     if(filterValue === 0){
         fetchData("../menApi.json")
-    }else if(filterValue === "200"){ 
+    }else if(filterValue === 200){ 
         display(fetchResult.filter((ele)=>(ele.price >= 200)))
     }else{
         display(fetchResult.filter((ele)=>(ele.price <= filterValue)))
