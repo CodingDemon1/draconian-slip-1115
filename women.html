@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apna Fashion | Women's Section</title>
+    <title>Apna Fashion | Women's Fashion</title>
     <link rel="stylesheet" href="./Style/index.css">
+    <link rel="stylesheet" href="./Style/women.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
 </head>
@@ -15,11 +16,12 @@
             <p>Free Shipping on Orders ₹500 and above. <a href="#">Details</a></p>
             <a href="index.html"><img src="./logo.png" alt="image"></a>
             <div class="smallIcons">
-                    <input type="text" placeholder="Search Here">
-                    <span class="material-symbols-outlined dropbtn">search</span>
+                    <input type="text" placeholder="Search Here" id="searchBar">
+                    <span class="material-symbols-outlined searchBtn ">search</span>
                     
                 <a href="account.html"><span class="material-symbols-outlined">person</span></a>
-                <span class="material-symbols-outlined">local_mall</span>
+                <a href="cart.html"><span class="material-symbols-outlined">local_mall</span></a>
+
             </div>
         </div>
         <!-- Top Heading End Here -->
@@ -28,7 +30,7 @@
         <!-- NavBar Start -->
         <nav>
             <div class="dropdown">
-                <button class=".dropbtn">WOMEN</button>
+                <button class="dropbtn">WOMEN</button>
                 <div class="dropdown-content">
                     <div>
                         <h4>CLOTHING</h4>
@@ -74,7 +76,7 @@
             </div>
     
             <div class="dropdown">
-                <button class=".dropbtn">MEN</button>
+                <button class="dropbtn">MEN</button>
                 <div class="dropdown-content">
                     <div>
                         <h4>CLOTHING</h4>
@@ -120,7 +122,7 @@
             </div>
     
             <div class="dropdown">
-                <button class=".dropbtn">JEANS</button>
+                <button class="dropbtn">JEANS</button>
                 <div class="dropdown-content">
                     <div>
                         <h4>WOMEN'S JEANS</h4>
@@ -148,7 +150,7 @@
             </div>
     
             <div class="dropdown">
-                <button class=".dropbtn">NEW</button>
+                <button class="dropbtn">NEW</button>
                 <div class="dropdown-content">
                     <div>
                         <h4>WOMEN'S NEW</h4>
@@ -174,7 +176,7 @@
             </div>
             
             <div class="dropdown">
-                <button class=".dropbtn">SALE</button>
+                <button class="dropbtn">SALE</button>
                 <div class="dropdown-content">
                     <div>
                         <h4>WOMEN'S CLEARANCE</h4>
@@ -204,31 +206,111 @@
         </nav>
         <!-- NavBar Ends Here -->
     
-        <!-- container -->
-        <div id="container">
-            <div class="configBox">
-                <h2>BROWSE BY :-</h2>
-                <hr>
-                <p>SORT :</p>
-                <select name="sortByPrice" id="sortByPrice">
-                    <option value="">Sort By Price</option>
-                    <option value="asc">Ascending</option>
-                    <option value="desc">Descending</option>
-                </select>
-    
-                <hr>
-                <p>FILTER :</p>
-                <select name="
-                filter" id="filter">
-            <option value="">Select to Filter</option>
-            <option value="fit">FIT</option>
-            <option value="pattern">PATTERN</option>
-            <option value="size">SIZE</option>
-            <option value="color">COLOUR</option></select>
+    <!-- container -->
+    <div id="container">
+        <div class="configBox">
+            <h2>BROWSE BY :-</h2>
+            <hr>
+            <p>SORT :</p>
+            <select name="sortByPrice" id="sort">
+                <option value="">Sort By Price</option>
+                <option value="asc">Ascending</option>
+                <option value="desc">Descending</option>
+            </select>
+
+            <hr>
+            <p>FILTER :</p>
+            <select name="filter" class="filterByCategory">
+                <option value="">Filter by Category</option>
+                <option value="tops">Tops</option>
+                <option value="sweaters">Sweater</option>
+                <option value="jackets">Jackets</option>
+                <option value="pants">Pants</option>
+                <option value="jeans">Jeans</option>
+            </select>
+            <select name="filterByPrice" class="filterByPrice">
+                <option value="">Filter by Price</option>
+                <option value="49">Less Than $50</option>
+                <option value="99">Less Than $100</option>
+                <option value="149">Less Than $150</option>
+                <option value="199">Less Than $200</option>
+                <option value="200">$200 and Above</option>
+            </select>
+            <select name="filterByRating" class="filterByRating">
+                <option value="">Filter by Rating</option>
+                <option value="0">Above 0 Star</option>
+                <option value="1">Above 1 Star</option>
+                <option value="2">Above 2 Star</option>
+                <option value="3">above 3 Star</option>
+                <option value="4">Above 4 Star</option>
+            </select>
+        </div>
+        <div class="displaySection">
+
+        </div>
+    </div>
+
+
+        <!-- Bottom Section Starts Here -->
+        <div class="bottom">
+            <div class="social">
+                <div class="socialBtn">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png" alt="Google Play">
+                    <img src="https://1000logos.net/wp-content/uploads/2020/08/apple-app-store-logo.jpg" alt="Apple Store">
+                </div>
+                <a href="#">SIGN UP FOR MOBILE ALERTS</a>
+                <a href="#">SIGN UP FOR EMAIL</a>
+                <img src="https://static.vecteezy.com/system/resources/previews/003/600/947/original/set-of-social-media-icon-in-round-bakground-free-vector.jpg" alt="social">
             </div>
-            <div class="displaySection">
+            <div class="socialLocator">
+                <h3>Store Locator</h3>
+                <a href="#">Find a Store</a>
+                <a href="#">Apna Fashion Outlet</a>
     
+                <h3>Apna Fashion Insider</h3>
+                <a href="#">Apna Fashion Rewards</a>
+                <a href="#">FAQ</a>
+                <a href="#">Terms & Conditions</a>
+    
+                <h3>Apna Fashion Credit Card</h3>
+                <a href="#">Benefits</a>
+                <a href="#">Apply</a>
+                <a href="#">Pay/View Account</a>
+            </div>
+            <div>
+                <h3>Gift Cards </h3>
+                <a href="#">Buy Gift Cards </a>
+                <a href="#">Check Your Balance </a>
+                <h3>About Express </h3>
+                <a href="#">Overview </a>
+                <a href="#">Investor Relations </a>
+                <a href="#">ESG </a>
+                <a href="#">Careers </a>
+            </div>
+            <div>
+                <h3>Popular Pages </h3>
+                <a href="#">Women's Clothing </a>
+                <a href="#">Men's Clothing </a>
+                <a href="#">Men's & Women's Jeans </a>
+                <a href="#">Women's Wear to Work </a>
+                <a href="#">Very Merry Velvet </a>
+                <a href="#">Women's Dresses </a>
+                <a href="#">Women's Editor Pants </a>
+                <a href="#">Women's Tops </a>
+            </div>
+            <div>
+                <h3>Customer Service </h3>
+                <a href="#">Contact Us </a>
+                <a href="#">Help </a>
+                <a href="#">Express Coupons </a>
+                <a href="#">Shipping Policy </a>
+                <a href="#">Returns Policy </a>
+                <a href="#">Student Discount </a>
+                <a href="#">Feedback </a>
+                <a href="#">Apna Fashion Marketplace FAQ </a>
             </div>
         </div>
+        <!-- Bottom Section Starts Here -->
 </body>
+<script src="./Script/women.js"></script>
 </html>
