@@ -52,3 +52,13 @@
 .productCard>img{
     width: 100%;
 }
+.productCard>button{
+    color: white;
+    background-color: #000;
+    padding: 10px;
+    border: none;
+}
+.productCard>button:hover{
+    background-color: rgb(43, 43, 43);
+    cursor: pointer;
+}
