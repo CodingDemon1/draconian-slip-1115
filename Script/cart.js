@@ -2,9 +2,11 @@ let cartItems = document.getElementById("cartItems");
 let cart = JSON.parse(localStorage.getItem("ApnaFashionCart")) || [];
 let orderTotal = document.getElementById("price");
 let orderTotals = document.getElementById("prices");
+let checkout = document.getElementById("checkout");
+let paytm = document.getElementById("paytm");
 
 display(cart)
-console.log(cart);
+// console.log(cart);
 function display(data){
     cartItems.innerHTML ="";
     data.forEach((element,index) => {
@@ -68,7 +70,8 @@ function display(data){
         card.append(img,div,div2)
 
         cartItems.append(card)
-        orderTotal.innerText = totalvalue()
+        orderTotal.innerText = `$ ${totalvalue()}`
+                orderTotals.innerText = `$ ${totalvalue()}`
     });
 }
 
@@ -81,3 +84,58 @@ function totalvalue(){
         }
         return total;
     }
+
+
+    //overlay & checkout form
+
+    let overlay = document.querySelector(".overlay");
+    let checkoutBtn = document.querySelector("#checkout");
+    let checkoutForm = document.querySelector(".checkoutForm")
+    let closeBtn = document.getElementById("closeBtn");
+
+    closeBtn.addEventListener("click",closeModal)
+    
+    checkoutBtn.addEventListener("click",showModal)
+
+    function showModal(){
+        overlay.classList.add("showOverlay");
+        checkoutForm.classList.add("showLoginForm");
+    }
+
+    function closeModal(){
+        overlay.classList.remove("showOverlay");
+        checkoutForm.classList.remove("showLoginForm");
+    }
+
+
+    let paymentForm = document.querySelector("#checkoutDetails")
+    let ordered = JSON.parse(localStorage.getItem("apnaFashionOrdered")) || [];
+    let empty = document.querySelector(".empty");
+
+
+        paymentForm.addEventListener("submit",()=>{
+        alert("Hurray!!! Payment Success")
+        
+        let orderDetails = {
+            fullName : paymentForm[0].value,
+            fullAdd : paymentForm[1].value +"  "+ paymentForm[2].value +" "+paymentForm[3].value+" "+paymentForm[4].value,
+            phone : paymentForm[5].value,
+            card : paymentForm[6].value,
+            totalItem : countItems(),
+            bill : totalvalue()
+        }
+        ordered.push(orderDetails);
+        localStorage.setItem("apnaFashionOrdered",JSON.stringify(ordered));
+        localStorage.removeItem("ApnaFashionCart");   
+        
+        cartItems.innerHTML = ""
+        }); 
+
+
+        function countItems(){
+            let count = 0;
+            cart.forEach((ele)=>{
+                count+= ele.quantity;
+            })
+            return count;
+        }

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apna Fashion</title>
+    <!-- <link rel="stylesheet" href="./Style/index.css"> -->
+    <link rel="stylesheet" href="./Style/admin.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <!-- Top Heading Start -->
+    <div id="top_heading">
+
+        <h4>Admin Page</h4>
+        <a href="index.html" class="logo"><img src="./logo.png" alt="image"></a>
+        <h4>Admin Page</h4>
+            
+
+        
+    </div>
+    <!-- Top Heading End Here -->
+
+    <div class="loginForm">
+        <h1>Please Log In</h1>
+        <form class="login" method="post">
+            <label for="username">Username :</label>
+            <input type="text" name="username" placeholder="Enter UserName...">
+    
+            <label for="pass">Password :</label>
+            <input type="password" name="pass" placeholder="Enter Your password...">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+
+    <div class="container">
+        <h1>Welcome Admin</h1>
+        <!-- Add Product Section -->
+        <div class="subContainer">
+            <div class="sideButtons">
+                <button id="addProductsBtn">Add Products</button>
+                <button id="showProducts">Show All Products</button>
+                <button id="trackOrder">All Orders</button>
+                <!-- <button id="manageCustomer">Manage Customers</button> -->
+            </div>
+            <div class="right">
+                
+                    <form id="addProduct" action="#" method="post">
+                        <label for="title"> Product Name :</label>
+                        <input type="text" name="title" placeholder="Enter Product Name...">
+
+                        <label for="id">Enter Product ID :</label>
+                        <input type="text" name="id" placeholder="Enter Product ID...">
+
+                        <label for="rating">Enter Product Rating :</label>
+                        <input type="text" name="rating" placeholder="Enter Product Rating...">
+
+                        <label for="price">Enter Product Price :</label>
+                        <input type="text" name="price" placeholder="Enter Product Price...">
+
+                        <select name="cat" id="cat">
+                            <option value="">Select Category ...</option>
+                            <option value="Sweater">Sweater</option>
+                            <option value="Jackets">Jackets</option>
+                            <option value="Shirts">Shirts</option>
+                            <option value="Coats">Coats</option>
+                            <option value="Pants">Pants</option>
+                            <option value="Jeans">Jeans</option>
+                            <option value="Tops">Tops</option>
+                            <option value="Suits">Suits</option>
+                            <option value="Polo">Polo</option>
+                        </select>
+
+                        <input id="addbtn" type="submit"  value="Add Product">
+                    </form>
+                
+                    <div class="displayProduct"></div>
+
+                    <div class="trackTable">
+                        <table id="orderedList">
+                            <thead>
+                                <th>Full Name</th>
+                                <th>Full Address</th>
+                                <th>Phone</th>
+                                <th>Card</th>
+                                <th>Total Item</th>
+                                <th>Total Payment Done</th>
+                            </thead>
+                        </table>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    </body>
+    <script src="./Script/admin.js"></script>
+</html>

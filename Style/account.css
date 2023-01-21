@@ -38,7 +38,7 @@ form>input{
     border: 1px solid rgb(189, 189, 189);
     padding: 10px;
     display: block;
-    border-radius: 8px;
+    /* border-radius: 8px; */
 }
 .container input:last-child{
     /* width: 100%; */
